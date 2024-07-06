@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Test</title>
+    <link rel="stylesheet" href="labTest.css">
+</head>
+
+<body>
+    <h1>Lab Test</h1>
+    <div class="container">
+        <form action="index.html">
+            <div class="card">
+                <div class="form-column">
+                    <table>
+                        <tr>
+                            <td colspan="2">
+                                <h2>1. Your Contact Details</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="name" name="name" placeholder="Full Name" required></td>
+                            <td><input type="text" name="PatientId" placeholder="Patient Id if exists" required></td>
+                        </tr>
+                        <tr>
+                            <td><input type="email" name="Email" placeholder="Email id" required></td>
+                            <td><input type="number" name="number" min="6000000000" max="9999999999"
+                                    placeholder="Contact Number" required></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <h2>2. Address</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="HouseNo" placeholder="H-No" required></td>
+                            <td><input type="text" name="Street" placeholder="Street" required></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="Area" placeholder="Area" required></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <label for="district">District:</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <select name="district" required>
+                                    <option value="" disabled selected>Select</option>
+                                    <option value="district1">District 1</option>
+                                    <option value="district2">District 2</option>
+                                    <option value="district3">District 3</option>
+                                    <option value="district4">District 4</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <h2>3. Choose the Test Type</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <fieldset>
+                                    <legend>3. Choose the Test Type</legend>
+                                    <input type="checkbox" id="a1" name="option" value="CBC" required>
+                                    <label for="a1">CBC</label><br>
+
+                                    <input type="checkbox" id="a2" name="option" value="Complete Urine">
+                                    <label for="a2">Complete Urine</label><br>
+
+                                    <input type="checkbox" id="a3" name="option" value="Lipid Profile">
+                                    <label for="a3">Lipid Profile</label><br>
+
+                                    <input type="checkbox" id="a4" name="option"
+                                        value="Thyroid Stimulating Hormone(TSH)">
+                                    <label for="a4">Thyroid Stimulating Hormone(TSH)</label><br>
+
+                                    <input type="checkbox" id="a5" name="option" value="Glucose Test">
+                                    <label for="a5">Glucose Test</label><br>
+                                </fieldset>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <h2>4. Do you want a hard copy of the report also?</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <fieldset>
+                                    <input type="radio" id="a1" name="option" value="Yes">
+                                    <label for="a1">Yes</label><br>
+                                    <input type="radio" id="a2" name="option" value="No" checked>
+                                    <label for="a2">No</label><br>
+                                </fieldset>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <h2>5. Select Your Comfortable Date and Time</h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="datetime-local" id="datetime" name="datetime" required></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="image-column">
+                    <img src="Images/Lab-Test/lab-test.jpg" alt="Image Description">
+                </div>
+            </div>
+            <div class="button-container">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

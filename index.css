@@ -1,0 +1,270 @@
+body {
+    margin: 0;
+    padding-top: 100px;
+}
+
+footer {
+    background-color: black;
+    text-align: right;
+    color: white;
+    padding: 15px;
+    margin-top: 5px;
+}
+
+h1 {
+    margin: 0;
+    background-color: #4f4f4f;
+    text-align: right;
+    padding: 30px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1001;
+}
+
+.menu {
+    margin: 0;
+    background-color: #808080;
+    text-decoration-color: white;
+    position: fixed;
+    top: 90px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    justify-content: space-around;
+}
+
+.menu li {
+    padding: 10px;
+    position: relative;
+    display: inline-block;
+}
+
+.menu li a {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+}
+
+.menu li:hover {
+    background-color: black;
+    color: white;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    top: 40px;
+    left: 0;
+    width: 150px;
+    z-index: 2;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li:hover .dropdown {
+    display: block;
+}
+
+.dropdown li {
+    padding: 10px;
+}
+
+.dropdown li a {
+    font-size: 15px;
+    color: #4878bd;
+}
+
+#animation {
+    background-color: white;
+    color: black;
+    animation-name: colors;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    max-width: 100vw;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    margin: 20px auto 0;
+    border: 2px solid steelblue;
+}
+
+#animation img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 11px;
+    left: 0;
+    opacity: 0;
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+#animation img:nth-child(1) {
+    animation-name: fade1;
+}
+
+#animation img:nth-child(2) {
+    animation-name: fade2;
+}
+
+#animation img:nth-child(3) {
+    animation-name: fade3;
+}
+
+#animation img:nth-child(4) {
+    animation-name: fade4;
+}
+
+#animation img:nth-child(5) {
+    animation-name: fade5;
+}
+
+@keyframes fade1 {
+
+    0%,
+    20% {
+        opacity: 1;
+    }
+
+    21%,
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fade2 {
+
+    0%,
+    20% {
+        opacity: 0;
+    }
+
+    21%,
+    40% {
+        opacity: 1;
+    }
+
+    41%,
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fade3 {
+
+    0%,
+    40% {
+        opacity: 0;
+    }
+
+    41%,
+    60% {
+        opacity: 1;
+    }
+
+    61%,
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fade4 {
+
+    0%,
+    60% {
+        opacity: 0;
+    }
+
+    61%,
+    80% {
+        opacity: 1;
+    }
+
+    81%,
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fade5 {
+
+    0%,
+    80% {
+        opacity: 0;
+    }
+
+    81%,
+    100% {
+        opacity: 1;
+    }
+}
+
+.product-grid {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.product-card {
+    background-color: #f2f2f2;
+    width: 300px;
+    max-height: 400px;
+    margin: 40px;
+    border-radius: 4px;
+}
+
+.product-grid .product-card img {
+    display: block;
+    width: 90%;
+    height: 200px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+.product-grid .product-card {
+    display: inline-block;
+}
+
+.product-grid .product-card .overlay {
+    margin: 10px;
+}
+
+.product-grid .product-card p {
+    margin: 0 auto;
+}
+
+.product-grid .product-card img:hover {
+    transform: scale(1.2);
+}
+
+.product-grid .product-card button {
+    background-color: #e6e6faa7;
+    border: none;
+    color: orange;
+    cursor: pointer;
+    padding: 10px 0;
+    font-size: 1em;
+    margin-bottom: 10px;
+    width: 90%;
+    margin-left: 5%;
+    transition: background-color 0.3s;
+    border-radius: 8px;
+}
+
+.product-grid .product-card button:active {
+    background-color: rgb(250, 234, 230);
+    border-color: rgb(0, 255, 76);
+}
+
+h2 {
+    margin-left: 10px;
+}
