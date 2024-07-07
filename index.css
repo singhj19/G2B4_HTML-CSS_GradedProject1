@@ -248,7 +248,8 @@ h1 {
 
 .product-grid .product-card button {
     background-color: #e6e6faa7;
-    border: none;
+    border: 2px;
+    border-color: #0d0dff;
     color: orange;
     cursor: pointer;
     padding: 10px 0;
